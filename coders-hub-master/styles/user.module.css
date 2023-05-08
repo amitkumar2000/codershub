@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+.user_div {
+    width: 100%;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 0.1rem solid var(--dark-border-1);
+    /* background-color: palevioletred; */
+}
+
+.light_user_div {
+    border-bottom: 0.1rem solid var(--light-border);
+}
+
+.user_div .user_dp_div {
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.dark_user_div .user_dp_div {
+    border: 0.1rem solid var(--dark-border-1);
+}
+
+.light_user_div .user_dp_div {
+    border: 0.1rem solid var(--light-border);
+}
+
+.user_div span img {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 50%;
+}
+
+.user_div .username {
+    margin-left: 1rem;
+    color: var(--dark-text);
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+}
+
+.light_user_div .username {
+    color: var(--light-text);
+}
+
+.user_div .username:hover {
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 900px) {
+    .user_div {
+        padding: 1rem 0;
+    }
+}

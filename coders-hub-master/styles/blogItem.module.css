@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Play&display=swap');
+
+.blogItem {
+    min-height: 12vh;
+    /* padding: 1rem 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-bottom: 0.1rem solid #af8afa;
+    /* background-color: yellowgreen; */
+}
+
+.light_blogItem {
+    border-bottom: 0.1rem solid purple;
+}
+
+.blogItem .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+.blogItem .details h3 {
+    color: white;
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    /* background-color: orange; */
+}
+
+.light_blogItem .details h3 {
+    color: black;
+}
+
+.blogItem .details h3:hover {
+    text-decoration: underline;
+}
+
+.blogItem .time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+.blogItem .time p {
+    color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Play', sans-serif;
+}
+
+.light_blogItem .time p {
+    color: grey;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+
+    /* .blogItem {
+        padding: 0 0.7rem;
+    } */
+
+}

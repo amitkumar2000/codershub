@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Karla&display=swap');
+
+.profile_page {
+    min-height: 87vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: lightgreen; */
+}
+
+.dark_profile {
+    background-color: var(--dark-bg);
+}
+
+.light_profile {
+    background-color: var(--light-bg);
+}
+
+.profile_page .profile_wrapper {
+    margin: 2rem 0;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1rem solid #af8afa;
+    /* background-color: limegreen; */
+}
+
+.light_profile .profile_wrapper {
+    border-bottom: 0.1rem solid var(--light-border);
+}
+
+.profile_page .profile_wrapper .profile_box {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+.profile_page .profile_wrapper .profile_box .dp_div {
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    border: 0.2rem solid #af8afa;
+    border-radius: 50%;
+}
+
+.light_profile .profile_wrapper .profile_box .dp_div {
+    border: 0.2rem solid var(--light-border);
+}
+
+.profile_page .profile_wrapper .profile_box .dp_div span img {
+    /* height: 100%;
+    width: 100%; */
+    border: none;
+    border-radius: 50%;
+}
+
+.profile_page .profile_wrapper .profile_box .user_details {
+    min-width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: lightpink; */
+}
+
+.light_profile .profile_wrapper .profile_box .user_details {
+    color: var(--light-text);
+}
+
+.profile_page .profile_wrapper .profile_box .user_details .user_name_div {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+.profile_page .profile_wrapper .profile_box .user_details .user_name_div .user_name {
+    margin-right: 1rem;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_page .profile_wrapper .profile_box .user_details .user_email,
+.profile_page .profile_wrapper .profile_box .user_details .user_blog_count {
+    margin-bottom: 1rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.profile_page .profile_wrapper .profile_box .user_details .user_name_div .user_editIcon {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.light_profile .profile_wrapper .profile_box .user_details .user_name_div .user_editIcon {
+    color: var(--light-text);
+}
+
+.profile_page .profile_wrapper .profile_box .user_details .user_name_div .user_editIcon:hover {
+    color: #af8afa;
+}
+
+.light_profile .profile_wrapper .profile_box .user_details .user_name_div .user_editIcon:hover {
+    color: var(--light-border);
+}
+
+.profile_page .user_blogs_container {
+    width: 45%;
+    /* background-color: green; */
+}
+
+.profile_page .user_blogs_container .noBlogs {
+    text-align: center;
+    color: white;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 720px) {
+
+    .profile_page {
+        min-height: 90vh;
+        padding-bottom: 8rem;
+        /* background-color: orange; */
+    }
+
+    .profile_page .profile_wrapper {
+        width: 90%;
+        /* background-color: limegreen; */
+    }
+
+    .profile_page .profile_wrapper .profile_box {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: orange; */
+    }
+
+    .profile_page .profile_wrapper .profile_box .user_details {
+        min-width: 100%;
+        margin-top: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: lightpink; */
+    }
+
+    .profile_page .profile_wrapper .profile_box .user_details .user_name_div {
+        justify-content: center;
+        /* background-color: orange; */
+    }
+
+    .profile_page .user_blogs_container {
+        width: 90%;
+        /* background-color: green; */
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 900px) {
+
+    .profile_page {
+        min-height: 90vh;
+        padding-bottom: 8rem;
+        /* background-color: orange; */
+    }
+
+    .profile_page .profile_wrapper {
+        width: 90%;
+        /* background-color: limegreen; */
+    }
+
+    .profile_page .profile_wrapper .profile_box {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        /* background-color: orange; */
+    }
+
+    .profile_page .user_blogs_container {
+        width: 90%;
+        /* background-color: green; */
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+
+    .profile_page .profile_wrapper {
+        width: 60%;
+        /* background-color: limegreen; */
+    }
+
+    .profile_page .user_blogs_container {
+        width: 60%;
+        /* background-color: green; */
+    }
+}

@@ -1,0 +1,52 @@
+:root {
+  --dark-bg: #212121;
+  --dark-border-1: #af8afa;
+  --dark-border-2: #b486ec;
+  --dark-border-3: purple;
+  --dark-text: white;
+  --light-bg: white;
+  --light-border: purple;
+  --light-text: black;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: #212121; */
+  /* background-color: #af8afa; */
+  /* background-color: #b486ec; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, textarea, button {
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

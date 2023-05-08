@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+.dp_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.436);
+}
+
+.dp_overlay .dp_modal {
+    height: 80vh;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 0.5rem;
+    /* background-color: purple; */
+}
+
+.dp_overlay .dark_dp_modal {
+    background-color: var(--dark-bg);
+}
+
+.dp_overlay .light_dp_modal {
+    background-color: var(--light-bg);
+}
+
+.dp_overlay .dp_modal .image_preview {
+    position: relative;
+    height: 55%;
+    width: 60%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border: 0.1rem dashed var(--dark-border-1);
+    border-radius: 0.5rem;
+    /* background-color: brown; */
+}
+
+.dp_overlay .light_dp_modal .image_preview {
+    border: 0.1rem dashed var(--light-border);
+}
+
+.dp_overlay .dp_modal .image_preview span img {
+    height: 100% !important;
+    width: 100% !important;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.dp_overlay .dp_modal .image_preview .remove_image_icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: var(--dark-border-1);
+    font-size: 1.5rem;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.dp_overlay .light_dp_modal .image_preview .remove_image_icon {
+    color: var(--light-border);
+}
+
+.dp_overlay .dp_modal .image_preview .remove_image_icon:hover {
+    color: red;
+}
+
+.dp_overlay .dp_modal .image_preview .image_icon {
+    height: 5rem;
+    width: 5rem;
+    color: var(--dark-text);
+    cursor: pointer;
+}
+
+.dp_overlay .light_dp_modal .image_preview .image_icon {
+    color: var(--light-text);
+}
+
+.dp_overlay .dp_modal .image_preview input {
+    display: none;
+}
+
+.dp_overlay .dp_modal .dp_btn_div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+.dp_overlay .dp_modal .dp_btn_div button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Vollkorn', serif;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.dp_overlay .dp_modal .dp_btn_div .dp_confirm_btn {
+    margin-bottom: 1rem;
+    color: var(--dark-text);
+    border: 0.1rem solid var(--light-border);
+    background-color: var(--light-border);
+}
+
+.dp_overlay .dp_modal .dp_btn_div .dp_confirm_btn:hover {
+    color: var(--light-border);
+    background-color: var(--light-bg);
+    transition: all 0.2s ease-in-out;
+}
+
+.dp_overlay .dp_modal .dp_btn_div .dp_cancel_btn {
+    margin-bottom: 1rem;
+    color: red;
+    border: 0.1rem solid red;
+    background-color: var(--light-bg);
+}
+
+.dp_overlay .dp_modal .dp_btn_div .dp_cancel_btn:hover {
+    color: var(--dark-text);
+    background-color: red;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+
+    .dp_overlay .dp_modal {
+        height: 65vh;
+        width: 80%;
+    }
+
+    .dp_overlay .dp_modal .image_preview {
+        height: 50%;
+        width: 85%;
+        margin: 1.5rem 0;
+    }
+
+    .dp_overlay .dp_modal .dp_btn_div {
+        width: 85%;
+    }
+
+    .dp_overlay .dp_modal .dp_btn_div button {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+
+    .dp_overlay .dp_modal {
+        height: 70vh;
+        width: 80%;
+    }
+
+    .dp_overlay .dp_modal .image_preview {
+        height: 55%;
+        width: 75%;
+        margin: 1.5rem 0;
+    }
+
+    .dp_overlay .dp_modal .dp_btn_div {
+        width: 75%;
+    }
+
+    .dp_overlay .dp_modal .dp_btn_div button {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 720px) {
+
+    .dp_overlay .dp_modal {
+        height: 70vh;
+        width: 75%;
+    }
+
+    .dp_overlay .dp_modal .image_preview {
+        height: 55%;
+        width: 70%;
+        margin: 1.5rem 0;
+    }
+
+    .dp_overlay .dp_modal .dp_btn_div {
+        width: 70%;
+    }
+
+    .dp_overlay .dp_modal .dp_btn_div button {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 900px) {
+
+    .dp_overlay .dp_modal {
+        height: 70vh;
+        width: 60%;
+    }
+
+    .dp_overlay .dp_modal .image_preview {
+        height: 55%;
+        width: 70%;
+        margin: 1.5rem 0;
+    }
+
+    .dp_overlay .dp_modal .dp_btn_div {
+        width: 70%;
+    }
+
+    .dp_overlay .dp_modal .dp_btn_div button {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .dp_overlay .dp_modal {
+        height: 80vh;
+        width: 55%;
+    }
+
+    .dp_overlay .dp_modal .image_preview {
+        height: 55%;
+        width: 70%;
+        margin: 1.5rem 0;
+    }
+
+    .dp_overlay .dp_modal .dp_btn_div {
+        width: 70%;
+    }
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap');
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: white; */
+}
+
+.light_home {
+  background-color: var(--light-bg);
+}
+
+.dark_home {
+  background-color: var(--dark-bg);
+}
+
+.main {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  /* background-color: limegreen; */
+}
+
+/* .main .categoriesDiv {
+  height: 12vh;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: none;
+  overflow-x: scroll;
+  border-bottom: 0.1rem solid var(--dark-border-1);
+  background-color: orange;
+} */
+
+/* .light_home .main .categoriesDiv {
+  border-bottom: 0.1rem solid var(--light-border);
+}
+
+.main .categoriesDiv h4 {
+  margin: 0 1rem;
+  color: var(--dark-text);
+  font-family: 'Heebo', sans-serif;
+}
+
+.light_home .categoriesDiv h4 {
+  color: var(--light-text);
+} */
+
+.main .title {
+  width: 75%;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  color: var(--dark-text);
+  font-family: 'Secular One', sans-serif;
+  /* background-color: yellowgreen; */
+}
+
+.light_home .main .title {
+  color: var(--light-text);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+
+  /* .main .categoriesDiv {
+    display: none;
+  } */
+
+  .main .title {
+    width: 95%;
+  }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+
+  /* .main .categoriesDiv {
+    display: none;
+  } */
+
+  .main .title {
+    width: 90%;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 720px) {
+
+  /* .main .categoriesDiv {
+    display: none;
+  } */
+
+  .main .title {
+    width: 85%;
+  }
+
+}
+
+@media only screen and (min-width: 721px) and (max-width: 900px) {
+
+  /* .main .categoriesDiv {
+    display: none;
+  } */
+
+  .main .title {
+    width: 80%;
+  }
+
+}

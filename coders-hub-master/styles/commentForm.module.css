@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Signika&display=swap');
+
+.commentForm {
+    min-height: 100%;
+    width: 100%;
+    /* background-color: violet; */
+}
+
+.dark_comment_form {
+    background-color: var(--dark-bg);
+}
+
+.light_comment_form {
+    background-color: var(--light-bg);
+}
+
+.commentForm .comment_pair {
+    width: 80%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: limegreen; */
+}
+
+.commentForm .comment_pair label {
+    margin-bottom: 1rem;
+    color: var(--dark-text);
+    font-size: 1.3rem;
+    font-family: 'Play', sans-serif;
+}
+
+.light_comment_form .comment_pair label {
+    color: var(--light-text);
+}
+
+.commentForm .comment_pair input, .commentForm .comment_pair textarea {
+    width: 100%;
+    color: var(--dark-text);
+    font-family: 'Signika', sans-serif;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 0.1rem solid var(--dark-border-1);
+    border-radius: 0.5rem;
+    background-color: #3b3b3b;
+}
+
+.light_comment_form .comment_pair input, .light_comment_form .comment_pair textarea {
+    color: var(--light-text);
+    border: 0.1rem solid var(--light-border);
+    background-color: var(--light-bg);
+}
+
+.commentForm .comment_pair input::placeholder, .commentForm .comment_pair textarea::placeholder {
+    color: lightgrey;
+}
+
+.light_comment_form .comment_pair input::placeholder, .light_comment_form .comment_pair textarea::placeholder {
+    color: grey;
+}
+
+.commentForm .comment_pair textarea {
+    resize: none;
+    height: 30vh;
+}
+
+.commentForm .comment_pair button {
+    align-self: flex-end;
+    padding: 0.5rem 1rem;
+    color: var(--dark-text);
+    font-size: 1.3rem;
+    border: 0.1rem solid #b486ec;
+    border-radius: 0.5rem;
+    background-color: var(--dark-border-1);
+    cursor: pointer;
+}
+
+.light_comment_form .comment_pair button {
+    border: 0.1rem solid rgb(174, 0, 174);
+    background-color: var(--light-border);
+}
+
+.commentForm .comment_pair button:hover {
+    color: #af8afa;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.light_comment_form .comment_pair button:hover {
+    color: var(--light-border);
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.commentForm .comment_pair .wrap {
+    width: 100%;
+    /* background-color: antiquewhite; */
+}

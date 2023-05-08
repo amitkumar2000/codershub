@@ -1,0 +1,22 @@
+.loading_backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+    background-color: rgba(0, 0, 0, 0.444);
+}
+
+.loading_backdrop .loading_modal {
+    height: 10rem;
+    width: 10rem;
+}
+
+.loading_backdrop .loading_modal span img {
+    height: 10rem !important;
+    width: 10rem !important;
+}

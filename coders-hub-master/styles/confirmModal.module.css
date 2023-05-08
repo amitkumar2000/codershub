@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1000;
+    /* opacity: 0.5; */
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+.modal {
+    height: 35%;
+    width: 30%;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.dark_modal {
+    background-color: var(--dark-bg);
+}
+
+.light_modal {
+    background-color: var(--light-bg);
+}
+
+.modal .modalText {
+    color: var(--dark-text);
+    font-family: 'Lora', serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    /* margin-bottom: 1rem; */
+    /* background-color: lime; */
+}
+
+.light_modal .modalText {
+    color: var(--light-text);
+}
+
+.modal .modal_btn_div {
+    /* align-self: flex-end; */
+    /* margin-top: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+.modal .modal_btn_div button {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.modal .modal_btn_div .cancel_btn {
+    color: var(--light-border);
+    border: 0.1rem solid var(--light-border);
+    background-color: white;
+}
+
+.modal .modal_btn_div .cancel_btn:hover {
+    color: var(--dark-text);
+    background-color: var(--light-border);
+    transition: all 0.2s ease-in-out;
+}
+
+.modal .modal_btn_div .action_btn {
+    color: var(--dark-text);
+    border: 0.1rem solid var(--light-border);
+    background-color: var(--light-border);
+}
+
+.modal .modal_btn_div .action_btn:hover {
+    color: var(--light-border);
+    background-color: var(--light-bg);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+    .modal {
+        height: 40%;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .modal {
+        height: 40%;
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 720px) {
+    .modal {
+        height: 40%;
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 900px) {
+    .modal {
+        height: 40%;
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .modal {
+        height: 40%;
+        width: 40%;
+    }
+}

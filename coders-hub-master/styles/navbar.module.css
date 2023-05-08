@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Signika+Negative&display=swap');
+
+.navbar {
+    height: 13vh;
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+}
+
+.light_nav {
+    border-bottom: 00.1rem solid purple;
+    background-color: white;
+}
+
+.dark_nav {
+    border-bottom: 0.1rem solid #af8afa;
+    background-color: #212121;
+}
+
+.navbar .logoDiv {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: palegreen; */
+}
+
+.navbar .logoDiv .logo {
+    margin-right: 1rem;
+    color: white;
+    font-family: 'DynaPuff', cursive;
+}
+
+.light_nav .logoDiv .logo {
+    color: black;
+}
+
+.navbar .searchDiv {
+    position: relative;
+    align-self: center;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.5rem;
+    /* background-color: brown; */
+}
+
+.navbar .searchDiv input {
+    outline: none;
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Signika Negative', sans-serif;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid #af8afa;
+    border-radius: 0.5rem;
+    background-color: #3b3b3b;
+}
+
+.light_nav .searchDiv input {
+    color: black;
+    border: 0.1rem solid purple;
+    background-color: white;
+}
+
+.navbar .searchDiv .searchIcon {
+    position: absolute;
+    top: auto;
+    right: 1rem;
+    color: #af8afa;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.light_nav .searchDiv .searchIcon {
+    color: purple;
+}
+
+.navbar .searchDiv .searchIcon:hover {
+    color: #d8b8ff;
+    transition: all 0.2s ease-in-out;
+}
+
+.light_nav .searchDiv .searchIcon:hover {
+    color: rgb(165, 0, 165);
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar .menuDiv {
+    width: 25vw;
+    padding: 0.5rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: hotpink; */
+}
+
+.navbar .icons {
+    margin: 0 1rem;
+    padding: 0;
+    color: var(--dark-text);
+    font-size: 2rem;
+    cursor: pointer;
+    /* background-color: orange; */
+}
+
+.light_nav .icons {
+    color: var(--light-text);
+}
+
+.navbar .menuDiv .profileIcon {
+    font-size: 1.5rem;
+}
+
+.navbar .icons:hover {
+    color: var(--dark-border-1);
+    transition: all 0.2s ease-in-out;
+}
+
+.light_nav .icons:hover {
+    color: var(--light-border);
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar .logoDiv .themeIcon {
+    position: fixed;
+    top: 4%;
+    left: 3%;
+}
+
+.navbar .menuDiv .theme_toggle {
+    display: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 900px) {
+
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 12vh;
+        justify-content: space-between;
+        padding: 0;
+        /* background-color: orange; */
+    }
+
+    .light_nav {
+        border-bottom: none;
+        border-top: 0.1rem solid var(--light-border);
+    }
+    
+    .dark_nav {
+        border-bottom: none;
+        border-top: 0.1rem solid var(--dark-border-1);
+    }
+
+    .navbar .searchDiv {
+        display: none;
+    }
+
+    .navbar .logoDiv {
+        /* width: 0; */
+        display: none;
+    }
+
+    /* .navbar .logoDiv .logo {
+        display: none;
+    } */
+
+    .navbar .menuDiv .theme_toggle {
+        display: block;
+    }
+
+    .navbar .menuDiv .themeIcon {
+        font-size: 1.7rem;
+    }
+
+    .navbar .logoDiv .themeIcon {
+        top: auto;
+        bottom: 13%;
+        left: 90%;
+        font-size: 2rem;
+        /* left: 100%; */
+    }
+
+    .navbar .menuDiv {
+        width: 100vw;
+        justify-content: space-around;
+        /* background-color: hotpink; */
+    }
+
+    .navbar .icons {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+
+    .navbar {
+        padding: 0 0rem;
+    }
+
+    .navbar .logoDiv .themeIcon {
+        top: 20%;
+        left: 2%;
+    }
+
+    .navbar .searchDiv {
+        width: 30vw;
+        /* background-color: orange; */
+    }
+
+    .navbar .menuDiv {
+        width: 30vw;
+        /* background-color: yellowgreen; */
+    }
+
+    .navbar .icons {
+        margin: 0 0.7rem;
+    }
+}

@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Merriweather&family=Mukta&family=PT+Sans&family=Rubik&family=Secular+One&family=Signika&family=Signika+Negative&family=Source+Serif+Pro&display=swap');
+
+.mycontainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* background-color: orchid; */
+}
+
+.mycontainer .leftSide, .mycontainer .rightSide {
+    height: 100%;
+    width: 50%;
+}
+
+.mycontainer .leftSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* background-color: orange; */
+}
+
+.mycontainer .leftSide .formDiv {
+    min-height: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: blueviolet; */
+}
+
+.mycontainer .leftSide .formDiv .heading {
+    color: black;
+    font-family: 'Secular One', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.mycontainer .leftSide .formDiv .intro {
+    color: black;
+    font-family: 'Source Serif Pro', serif;
+    margin-bottom: 2rem;
+}
+
+.mycontainer .leftSide .formDiv .flexDiv {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: orchid; */
+}
+
+.mycontainer .leftSide .formDiv .flexDiv label {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.mycontainer .leftSide .formDiv .flexDiv input, .mycontainer .leftSide .formDiv .btnDiv button {
+    border-radius: 0.5rem;
+}
+
+.mycontainer .leftSide .formDiv .flexDiv input {
+    outline: none;
+    width: 60%;
+    padding: 0.5rem 1rem;
+    color: black;
+    font-size: 1.1rem;
+    font-family: 'Signika', sans-serif;
+    border: 0.1rem solid grey;
+    background-color: white;
+}
+
+.mycontainer .leftSide .formDiv .flexDiv input:focus {
+    border: 0.1rem solid rgb(175, 1, 175);
+}
+
+.mycontainer .leftSide .formDiv .forgot_password {
+    align-self: flex-end;
+    color: purple;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+}
+
+.mycontainer .leftSide .formDiv .btnDiv {
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.05rem solid rgb(189, 189, 189);
+    /* background-color: yellowgreen; */
+}
+
+.mycontainer .leftSide .formDiv .btnDiv .rememberDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.mycontainer .leftSide .formDiv .btnDiv .rememberDiv input, .mycontainer .leftSide .formDiv .btnDiv .rememberDiv label {
+    color: black;
+    font-family: 'Mukta', sans-serif;
+    cursor: pointer;
+}
+
+.mycontainer .leftSide .formDiv .btnDiv .rememberDiv input {
+    margin-right: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+}
+
+.mycontainer .leftSide .formDiv .btnDiv button {
+    /* align-self: center; */
+    min-width: 25%;
+    /* margin-top: 2rem; */
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid purple;
+    cursor: pointer;
+    background-color: rgb(145, 0, 145);
+}
+
+.mycontainer .leftSide .formDiv .btnDiv button:hover {
+    background-color: rgb(178, 2, 178);
+}
+
+.mycontainer .leftSide .formDiv .other {
+    align-self: center;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    /* background-color: red; */
+}
+
+.mycontainer .leftSide .formDiv .otherText {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    color: purple;
+    cursor: pointer;
+    /* background-color: yellow; */
+}
+
+.mycontainer .rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, rgb(80, 0, 80), purple);
+}
+
+.mycontainer .rightSide .bannerDiv {
+    height: 57vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 1rem;
+    background-color: white;
+    /* background-color: pink; */
+}
+
+.mycontainer .rightSide .bannerDiv span img {
+    height: 50vh !important;
+    width: 100% !important;
+}
+
+.mycontainer .rightSide .info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: gold; */
+}
+
+.mycontainer .rightSide .info h2 {
+    margin-bottom: 1rem;
+    color: white;
+    font-family: 'DynaPuff', cursive;
+}
+
+.mycontainer .rightSide .info p {
+    width: 80%;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    /* background-color: brown; */
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+
+    .mycontainer .rightSide {
+        display: none;
+    }
+
+    .mycontainer .leftSide {
+        width: 100%;
+        /* background-color: orange; */
+    }
+
+    .mycontainer .leftSide .formDiv {
+        min-height: 75%;
+        width: 85%;
+        /* background-color: blueviolet; */
+    }
+
+    /* .mycontainer .leftSide .formDiv .flexDiv {
+        background-color: orchid;
+    } */
+
+    .mycontainer .leftSide .formDiv .btnDiv button {
+        min-width: 30%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+
+    .mycontainer .rightSide {
+        display: none;
+    }
+
+    .mycontainer .leftSide {
+        width: 100%;
+        /* background-color: orange; */
+    }
+
+    .mycontainer .leftSide .formDiv {
+        min-height: 75%;
+        width: 80%;
+        /* background-color: blueviolet; */
+    }
+
+    .mycontainer .leftSide .formDiv .btnDiv button {
+        min-width: 25%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 720px) {
+
+    .mycontainer .rightSide {
+        display: none;
+    }
+
+    .mycontainer .leftSide {
+        width: 100%;
+        /* background-color: orange; */
+    }
+
+    .mycontainer .leftSide .formDiv {
+        min-height: 70%;
+        width: 75%;
+        /* background-color: blueviolet; */
+    }
+
+    .mycontainer .leftSide .formDiv .btnDiv button {
+        min-width: 23%;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 900px) {
+
+    .mycontainer .rightSide {
+        display: none;
+    }
+
+    .mycontainer .leftSide {
+        width: 100%;
+        /* background-color: orange; */
+    }
+
+    .mycontainer .leftSide .formDiv {
+        min-height: 70%;
+        width: 70%;
+        /* background-color: blueviolet; */
+    }
+
+    .mycontainer .leftSide .formDiv .flexDiv input {
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+
+    .mycontainer .leftSide .formDiv {
+        min-height: 75%;
+        width: 80%;
+        /* background-color: blueviolet; */
+    }
+
+    .mycontainer .leftSide .formDiv .btnDiv button {
+        min-width: 28%;
+    }
+
+    /* .mycontainer .leftSide .formDiv .flexDiv input {
+        width: 65%;
+    } */
+}
